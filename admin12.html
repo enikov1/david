@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin 12</title>
+
+	<link rel="stylesheet" href="css/inline.css">
+
+	<link rel="stylesheet" href="css/libs/tailwind.css">
+
+	<link rel="stylesheet" href="css/libs/swiper-bundle.css">
+	
+</head>
+<body class="flex flex-col min-h-screen mx-3 md:mx-0">
+
+	<header class="py-2 border-b">
+			<div class="w-full flex-col md:flex-row md:max-w-6xl flex md:justify-between md:items-center m-auto relative">
+				<a class="block w-32" href="#">
+					<img src="./img/svg/logo-big.svg" alt="">
+				</a>
+				<p class="mr-auto ml-10 text-gray-500 hidden sm:block">First Estata Costa Blanca</p>
+		
+				<ul id="a-menu" class="sm:flex flex-col md:flex-row md:flex-wrap mt-5 sm:mt-0 hidden">
+					<li class="mr-10">
+						<a class="animation-underline" href="#">Kyero.com</a>
+					</li>
+					<li class="mr-10">
+						<a class="animation-underline" href="#">Help</a>
+					</li>
+					<li class="mr-10">
+						<a class="animation-underline" href="#">Log out</a>
+					</li>
+					<li id="a-lang-change" class="relative cursor-pointer">
+						<span href="#">English <i class=" absolute mt-2 ml-1 arrow-bottom"></i>
+							<ul class="w-full md:w-32 md:absolute hidden top-0 -right-2 mt-3 md:mt-10  bg-gray-200 p-5">
+								<li><a class="animation-underline" href="#">Русский</a></li>
+								<li><a class="animation-underline" href="#">Русский 2</a></li>
+								<li><a class="animation-underline" href="#">Русский 3</a></li>
+								<li><a class="animation-underline" href="#">Русский 4</a></li>
+								<li><a class="animation-underline" href="#">Русский 5</a></li>
+							</ul>
+						</span>
+					</li>
+				</ul>
+
+				<div id="a-menu-active" class="absolute top-2 right-0 block sm:hidden">
+					<div class="rounded-2xl mt-1 px-3 py-1 bg-gray-300">
+						<i class="icon-menu text-gray-700 text-xl"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+
+	<div class="w-full md:max-w-6xl mx-auto w-full">
+		<nav class="mt-3 mb-5">
+			<ul class="flex flex-wrap items-center">
+				<li class="mr-3">
+					<a class="text-blue p-3 block rounded-3xl hover:bg-blue hover:text-white" href="#">Dashboard</a>
+				</li>
+				<li class="mr-3">
+					<a class="text-blue p-3 block rounded-3xl hover:bg-blue hover:text-white" href="#">Account</a>
+				</li>
+				<li class="mr-3">
+					<a class="rounded-3xl bg-blue text-white p-3 block" href="#">Properties</a>
+				</li>
+				<li class="mr-3">
+					<a class="text-blue p-3 block rounded-3xl hover:bg-blue hover:text-white" href="#">Profile</a>
+				</li>
+			</ul>
+		</nav>
+
+		
+
+		<div class="flex flex-wrap">
+
+			<div class="w-full md:w-3/12 pr-0 md:pr-10">
+				<div class="bg-gray-100 rounded-3xl border py-3 px-5 mb-5">
+					
+					<div class="flex flex-col items-center justify-center">
+						<span class="text-center text-xl"><i class="icon-check i-green text-2xl mr-1 align-middle"></i>Ref: DM-V1433004516</span>
+
+						<b class="my-3">Prime</b>
+						<i class="text-sm my-3 text-center">Villa for sale on Moraira, created about 20 hours ago</i>
+						<a class="text-blue" href="#"><i class="icon-minus i-brown mr-1"></i>Put on hold</a>
+					</div>
+
+					<ul class="mt-10">
+						<li class="border py-2 px-3 bg-white"><a class="text-blue" href="#"><i class="icon-search mr-1"></i>View</a></li>
+						<li class="border py-2 px-3 bg-white rounded-b-2xl"><a class="text-blue" href="#"><i class="icon-statistic mr-1"></i>Reports</a></li>
+					</ul>
+
+
+				</div>
+
+				<div class="bg-gray-100 rounded-3xl border py-3 px-5 mb-5">
+					<a class="text-xl text-blue" href="#">
+						<i class="icon-left-arrow text-2xl"></i>
+						All properties
+					</a>
+				</div>
+
+				<div class="bg-gray-100 rounded-3xl mb-5 border">
+					<span class="py-3 px-5 text-base pb-3 border-b border-gray-300 block">Prime properties</span>
+				
+
+					<ul class="p-3">
+						<li class="flex justify-between p-2">
+							<a class="text-blue" href="#">Live</a>
+							<span>400</span>
+						</li>
+						<li class="flex justify-between p-2 bg-red-200">
+							<a class="text-blue" href="#">Корзина</a>
+							<span>39</span>
+						</li>
+						<li class="flex justify-between p-2 bg-red-200 rounded-b-2xl">
+							<a class="text-blue" href="#">Не опубликовано</a>
+							<span>356</span>
+						</li>
+					</ul>
+				</div>
+
+			
+			</div>
+
+			<div class="w-full md:w-9/12">
+				<div class="bg-gray-100 rounded-3xl mb-5 border">
+					<span class="py-3 px-5 text-base mb-5 pb-3 border-b border-gray-300 block">View</span>
+					
+					
+					<div class="mt-3 px-5">
+					
+						<ul class="flex flex-wrap mb-5">
+							<li class="mr-3"><a class="block text-blue rounded-3xl p-3 hover:bg-blue hover:text-white" href="#"><i class="icon-check i-green mr-1"></i>Details</a></li>
+							<li class="mr-3"><a class="block text-blue rounded-3xl p-3 hover:bg-blue hover:text-white" href="#"><i class="icon-check i-green mr-1"></i>Key Features</a></li>
+							<li class="mr-3"><a class="block text-blue rounded-3xl p-3 hover:bg-blue hover:text-white" href="#"><i class="icon-check i-green mr-1"></i>Description</a></li>
+							<li class="mr-3"><a class="block text-blue rounded-3xl p-3 hover:bg-blue hover:text-white" href="#"><i class="icon-check i-green mr-1"></i>Images</a></li>
+							<li class="mr-3"><a class="block text-blue rounded-3xl p-3 hover:bg-blue hover:text-white" href="#"><i class="icon-check i-green mr-1"></i>Video</a></li>
+							<li class="mr-3"><a class="block rounded-3xl bg-blue text-white p-3" href="#"><i class="icon-check i-green mr-1"></i>View</a></li>
+						</ul>
+
+						<div class="flex flex-wrap justify-end w-full">
+							<b class="mr-3">Language</b>
+
+							<select class="border border-gray-300" name="">
+								<option value="1">Russian</option>
+								<option value="1">Russian</option>
+								<option value="1">Russian</option>
+								<option value="1">Russian</option>
+								<option value="1">Russian</option>
+								<option value="1">Russian</option>
+							</select>
+						</div>
+
+						<div class="bg-gray-100 rounded-3xl mb-5 border my-5 p-2">
+							<h1 class="text-2xl border-b border-gray-300 p-4 mb-5">Moraira Вилла для продажи</h1>
+
+							<div class="w-full md:w-8/12 px-4">
+								<div class="swiper-container md:h-64 mb-10">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+										<img src="./img/admin/article-1.jpg">
+										</div>
+										<div class="swiper-slide">
+										<img src="./img/admin/article-2.jpg">
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+									<!-- If we need pagination -->
+									<div class="swiper-pagination"></div>  
+								</div>
+
+							</div>
+							<div class="px-4">
+								<b class="mb-3 md:mb-0 text-gray-800 mb-3">Предложение: DM-V1433004516</b>
+								
+									<ul class="mb-3 flex flex-wrap text-gray-800">
+										<li class="mb-3 md:mb-0 mr-3 text-sm">5 спальни</li>
+										<li class="mb-3 md:mb-0 mr-3 text-sm">4 ванная</li>
+										<li class="mb-3 md:mb-0 mr-3 text-sm">359 m<sup>2</sup> построен</li>
+										<li class="mb-3 md:mb-0 mr-3 text-sm">1015 m<sup>2</sup> Участок Размер</li>
+										<li class="mb-3 md:mb-0 mr-3 text-sm">Бассейн</li>
+									</ul>
+
+									<p class="text-gray-800 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio veniam iste laudantium saepe eos rerum error laborum dolore fugit. Consequuntur error omnis amet repudiandae esse beatae ullam. Optio error vitae quam laudantium ex laboriosam quae veritatis ullam veniam cupiditate.</p>
+							</div>
+						</div>
+					
+						
+						
+					</div>
+				</div>
+
+				
+			</div>
+			
+		</div>
+	</div>
+
+
+	<footer class="max-w-6xl mx-auto w-full mt-auto pt-32 pb-5">
+		<div class="bg-gray-100 rounded-3xl border py-3 px-5">
+			<p class="text-sm text-gray-800">&copy; 2007-2021 All rights reserved</p>
+		</div>
+
+	</footer>
+
+
+	
+
+	<!-- support styles -->
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+
+		function updateFraction(slider) {
+			const { params, activeIndex } = slider;
+
+			slider.$el
+				.find(`.${params.pagination.currentClass}`)
+				.text(`${activeIndex + params.slidesPerView}`);
+
+			slider.$el
+				.find(`.${params.pagination.totalClass}`)
+				.text(slider.slides.length);
+		}
+
+		var mySwiper = new Swiper ('.swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			// loop: true,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'fraction',
+				clickable: true,
+				renderFraction: (currentClass, totalClass) => `
+				<div class="text-white"><span class="${currentClass}"></span>/
+				<span class="${totalClass}"></span></div>`,
+			},
+
+			// Navigation arrows
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			},
+
+			// And if we need scrollbar
+			scrollbar: {
+			el: '.swiper-scrollbar',
+			},
+
+			on: {
+				init() {
+					setTimeout(updateFraction, 0, this);
+				},
+				slideChange() {
+					updateFraction(this);
+				},
+				resize() {
+					updateFraction(this);
+				},
+			},
+		})
+	</script>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="css/libs/glightbox.min.css">
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/glightbox.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
+	<script src="js/libs/jquery.expandable.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
